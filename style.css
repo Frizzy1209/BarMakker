@@ -349,7 +349,7 @@ li {
 
 /* Responsive website for mobile device */
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 430px) {
     .navBar {
         height: 50px;
         width: 70px;
