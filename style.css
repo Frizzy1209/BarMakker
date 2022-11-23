@@ -311,6 +311,11 @@ h5 {
     margin: 15px;
 }
 
+.resetSearch {
+    padding: 7px;
+    margin: 15px;
+}
+
 .searchField {
     padding: 7px;
     border-radius: 15px;
@@ -352,12 +357,12 @@ li {
 @media only screen and (max-width: 500px) {
     .navBar {
         height: 50px;
-        width: 70px;
+        width: 45px;
     }
 
     .navBar button {
-        width: 60px;
         height: 50px;
+        width: 45px;
     }
 
     h1 {
@@ -365,26 +370,32 @@ li {
     }
 
     .welcomeSectionHeadline {
-        font-size: 25px;
-    }
-
-    .welcomeSectionText {
-        font-size: 20px;
-    }
-
-    .findBarBtn {
-        height: 75px;
-        width: 250px;
-
         font-size: 15px;
     }
 
+    .welcomeSectionText {
+        font-size: 12px;
+
+        padding-bottom: 80px;
+    }
+
+    .findBarBtn {
+        height: 48px;
+        width: 210px;
+
+        font-size: 12px;
+    }
+
+    .findBarHeadline {
+        font-size: 20px;
+    }
+
     .favoriteBarHeadline {
-        font-size: 28px;
+        font-size: 25px;
     }
 
     .favoriteBarText {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .favoriteBarMap {
