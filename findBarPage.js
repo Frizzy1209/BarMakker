@@ -34,6 +34,15 @@ function renderBars(bars) {
 
 
 
+
+
+
+
+
+
+
+
+
 //brugeren skal kunne tilføje en bar til databasen
 
 const createBars = {

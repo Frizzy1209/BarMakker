@@ -273,19 +273,77 @@ h5 {
 
 
 
+
+/* Find bar headline text */
+
+.findBarHeadlineContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.findBarHeadline {
+    color: #e63946;
+    font-size: 35px;
+}
+
+
+
+
+
 /* Bar list style */
+
+.dataFromApi {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+}
+
+.filterSearch {
+    display: flex;
+
+    flex-direction: column;
+
+    margin: 25px;
+}
+
+.searchBtn {
+    padding: 7px;
+    margin: 15px;
+}
+
+.searchField {
+    padding: 7px;
+    border-radius: 15px;
+    margin: 15px;
+
+}
+
+.checkBox {
+    display: flex;
+    flex-direction: column;
+    color: #e63946;
+}
+
+.allBarList {
+    width: 65%;
+
+    margin: 15px;
+}
 
 li {
     list-style-type: none ;
-    margin: 25px;
+    margin: 35px;
     border-radius: 25px;
     border: #e63946 2px solid;
     background-color: rgba(114, 114, 114, 0.5);
-    padding: 10px;
-    width: 60%;
+    padding: 15px;
+    width: 90%;
 
     text-decoration-style: solid;
 }
+
 
 
 
