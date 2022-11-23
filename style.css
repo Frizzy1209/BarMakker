@@ -355,6 +355,10 @@ li {
 /* Responsive website for mobile device */
 
 @media only screen and (max-width: 500px) {
+    body {
+        background-size: 1000px;
+    }
+
     .navBar {
         height: 50px;
         width: 45px;
