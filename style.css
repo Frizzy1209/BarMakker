@@ -109,7 +109,8 @@ button:hover {
 
 .welcomeSectionHeadline {
     color: #e63946;
-    font-size: xx-large;
+    font-size: 42px;
+    font-weight: bold;
 }
 
 .welcomeSectionText {
@@ -118,7 +119,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
 
-    font-size: x-large;
+    font-size: 27px;
 }
 
 
@@ -154,22 +155,25 @@ button:hover {
 
 .favoriteBarHeadline {
     color: #e63946;
-    font-size: xx-large;
+    font-size: 35px;
 
     display: flex;
     justify-content: center;
 }
 
 h4 {
-    font-size: x-large;
+    color: #e63946;
+    font-size: 25px;
 }
+
 
 .favoriteBarText {
     display: flex;
     justify-content: center;
     align-items: center;
-
     flex-direction: column;
+
+    font-size: 18px;
 }
 
 .favoriteBarMap {
