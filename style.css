@@ -197,12 +197,10 @@ h4 {
     transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out;
 
-    border-radius: 15px;
-
     z-index: 10;
 
+    border-radius: 15px;
     width: 400px;
-    max-width: 30%;
     background-color: rgba(114, 114, 114, 0.95);
 
     font-family: michromaregular;
@@ -343,6 +341,71 @@ li {
 
     text-decoration-style: solid;
 }
+
+
+
+
+
+
+/* Responsive website for mobile device */
+
+@media only screen and (max-width: 450px) {
+    .navBar {
+        height: 50px;
+        width: 70px;
+    }
+
+    .navBar button {
+        width: 60px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .welcomeSectionHeadline {
+        font-size: 25px;
+    }
+
+    .welcomeSectionText {
+        font-size: 20px;
+    }
+
+    .findBarBtn {
+        height: 75px;
+        width: 250px;
+
+        font-size: 15px;
+    }
+
+    .favoriteBarHeadline {
+        font-size: 28px;
+    }
+
+    .favoriteBarText {
+        font-size: 18px;
+    }
+
+    .aboutUs {
+        padding-top: 10px;
+    }
+
+    .signInPopUp {
+        width: 300px;
+    }
+
+    .dataFromApi {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
 
 
 
