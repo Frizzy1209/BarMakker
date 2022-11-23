@@ -1,0 +1,280 @@
+body {
+    background-image: url("bar2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+* {
+    font-family: michromaregular;
+}
+
+p {
+    color: #ffffff;
+}
+
+.headerTitleLogo {
+    width: 50%;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #e63946;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+h1 {
+    margin: 0;
+    font-family: Racing Sans One;
+    font-size: xxx-large;
+}
+
+.reloadPage {
+    text-decoration: none;
+    color: inherit;
+}
+
+.reloadPage:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+/* Navbar section & button */
+
+.navBar {
+    width: 135px;
+    height: 35px;
+
+    background-color: rgba(114, 114, 114, 0.5);
+    border-radius: 20px;
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.navBar button{
+    width: 130px;
+}
+
+button {
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255,0.8);
+    color: #000000;
+    transition: all .20s;
+}
+
+button:hover {
+    background-color: rgb(230, 57, 70, 0.5);
+    transform: scale(0.9);
+}
+
+
+
+
+
+
+/* Welcome section */
+
+.welcomeSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100vh;
+}
+
+.welcomeSectionHeadline {
+    color: #e63946;
+    font-size: xx-large;
+}
+
+.welcomeSectionText {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: x-large;
+}
+
+
+
+
+/* Find bar  */
+
+.findBarBtn {
+    height: 100px;
+    width: 450px;
+
+    font-size: x-large;
+}
+
+
+
+
+
+
+/* Favorite bar section  */
+
+.favoriteBar {
+    color: #e63946;
+    height: 100vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.favoriteBarHeadline {
+    color: #e63946;
+    font-size: xx-large;
+
+    display: flex;
+    justify-content: center;
+}
+
+h4 {
+    font-size: x-large;
+}
+
+.favoriteBarText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.favoriteBarMap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+/* Sign in pop up */
+
+.signInPopUp {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+
+    border-radius: 15px;
+
+    z-index: 10;
+
+    width: 800px;
+    max-width: 50%;
+    background-color: rgba(114, 114, 114, 0.95);
+
+    font-family: michromaregular;
+}
+
+.signInPopUp.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popUpHeader {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popUpTitle {
+    font-size: 1.50rem;
+    font-weight: bold;
+
+    color: #e63946;
+}
+
+.closePopUpBtn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.popUpText {
+    padding: 10px 15px;
+    font-size: 1.25rem;
+}
+
+span {
+    color: #e63946;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.75);
+
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+
+
+
+
+
+/* Bar list style */
+
+li {
+    list-style-type: none ;
+    margin: 25px;
+    border-radius: 25px;
+    border: #e63946 2px solid;
+    background-color: rgba(114, 114, 114, 0.5);
+    padding: 10px;
+    width: 60%;
+
+    text-decoration-style: solid;
+}
+
+
+
+@font-face {
+    font-family: 'michromaregular';
+    src: url('fontFamily1/michroma-regular-webfont.woff2') format('woff2'),
+    url('fontFamily1/michroma-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-con" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <title> BARMAKKER </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<header>
+  <div class="headerTitleLogo">
+    <div class="titleText">
+      <a href="index.html" class="reloadPage" > <h1> Barmakker  </h1> </a>
+    </div>
+  </div>
+
+  <nav class="navBar">
+    <div class="navBarBtn1">
+      <button class="signIn"> Log in </button>
+    </div>
+
+
+  </nav>
+</header>
+
+<main>
+  <div class="allBarList">
+    <ul id="bars"> </ul>
+  </div>
+</main>
+
+<div class="signInPopUp">
+  <div class="popUpHeader">
+    <div class="popUpTitle"> Log in </div>
+    <button class="closePopUpBtn"> &times; </button>
+  </div>
+  <div class="popUpText">
+    <form>
+      <label for="name">Navn:</label>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email"><br><br>
+
+      <input type="submit" id="signIn" value=" Log in ">
+    </form>
+  </div>
+</div>
+
+<div id="overlay"> </div>
+
+
+
+<script src="findBarPage.js"></script>
+</body>
+</html>
