@@ -27,9 +27,11 @@ openSignInBtn.addEventListener
     }
 )
 
-closeSignInBtn.addEventListener(`click`, function (){
-    if (showSignInPopUp == null) return
-    showSignInPopUp.classList.remove(`active`)
-    overlay.classList.remove(`active`)
-})
+closeSignInBtn.addEventListener(`click`, function ()
+    {
+        if (showSignInPopUp == null) return
+        showSignInPopUp.classList.remove(`active`)
+        overlay.classList.remove(`active`)
+    }
+)
 

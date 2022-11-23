@@ -19,6 +19,16 @@ p {
     color: #ffffff;
 }
 
+span {
+    color: #e63946;
+}
+
+
+
+
+
+/* Title & logo */
+
 .headerTitleLogo {
     width: 50%;
     font-size: 20px;
@@ -114,6 +124,7 @@ button:hover {
 
 
 
+
 /* Find bar  */
 
 .findBarBtn {
@@ -172,6 +183,7 @@ h4 {
 
 
 
+
 /* Sign in pop up */
 
 .signInPopUp {
@@ -185,8 +197,8 @@ h4 {
 
     z-index: 10;
 
-    width: 800px;
-    max-width: 50%;
+    width: 400px;
+    max-width: 30%;
     background-color: rgba(114, 114, 114, 0.95);
 
     font-family: michromaregular;
@@ -224,10 +236,6 @@ h4 {
     font-size: 1.25rem;
 }
 
-span {
-    color: #e63946;
-}
-
 #overlay {
     position: fixed;
     opacity: 0;
@@ -247,6 +255,15 @@ span {
 }
 
 
+
+
+
+/* About us */
+
+h5 {
+    font-size: x-large;
+    color: #e63946;
+}
 
 
 

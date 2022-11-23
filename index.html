@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
   <link rel="icon" type="image/x-con" href="favicon.ico">
   <link rel="stylesheet" href="style.css">
@@ -14,87 +16,97 @@
 </head>
 
 <body>
+
 <header>
-  <div class="headerTitleLogo">
-    <div class="titleText">
-      <h1 class="reloadPage"> BarMakker  </h1>
-    </div>
-  </div>
 
-  <nav class="navBar">
-    <div class="navBarBtn1">
-      <button class="signIn"> Log in </button>
+    <div class="headerTitleLogo">
+        <div class="titleText">
+            <h1 class="reloadPage"> BarMakker  </h1>
+        </div>
     </div>
 
+    <nav class="navBar">
+        <div class="navBarBtn1">
+            <button class="signIn"> Log in </button>
+        </div>
+    </nav>
 
-  </nav>
 </header>
+
 
 <main>
 
-  <div class="welcomeSection">
-    <div class="welcomeSectionHeadline">
-      <h2> Velkommen til barmakker! </h2>
+    <div class="welcomeSection">
+        <div class="welcomeSectionHeadline">
+            <h2> Velkommen til barmakker! </h2>
+        </div>
+
+        <div class="welcomeSectionText">
+            <p> Vi er en hjemmeside som hjælper dig med at finde den perfekte bar til dine behøv! </p>
+            <p> En ægte barmakker! </p>
+        </div>
+
+        <div class="findBar">
+            <button class="findBarBtn" href="findbar.html"> Find din bar nu! </button>
+        </div>
     </div>
 
-    <div class="welcomeSectionText">
-      <p> Vi er en hjemmeside som hjælper dig med at finde den perfekte bar til dine behøv! </p>
-      <p> En ægte barmakker! </p>
-    </div>
 
-    <div class="findBar">
-      <button class="findBarBtn" href="findbar.html"> Find din bar nu! </button>
-    </div>
-  </div>
+    <div class="favoriteBar">
+        <div class="favoriteBarHeadline">
+            <h3> Barmakkers favorit bar </h3>
+        </div>
 
+        <div class="favoriteBarText">
+            <h4> Cafe Stefanshus </h4>
+            <p> Cafe Stefanshus er en af de mest livlige barer på Nørrebro, og ligger super centralt.  </p>
+            <p> Cafe Stefanshus byder både på billard, pool, sport på storskærm og har også et køkken, hvor de laver lækker mad. </p>
+        </div>
 
-  <div class="favoriteBar">
-    <div class="favoriteBarHeadline">
-      <h3> Barmakkers favorit bar </h3>
+        <div class="favoriteBarMap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2044.2259466332416!2d12.543289343764833!3d55.69520341895135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253b2baefef6d%3A0xe6542a32d92f1795!2sCafe%20Stefanshus!5e0!3m2!1sda!2sdk!4v1669052330168!5m2!1sda!2sdk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
-
-    <div class="favoriteBarText">
-      <h4> Cafe Stefanshus </h4>
-      <p> Cafe Stefanshus er en af de mest livlige barer på Nørrebro, og ligger super centralt.  </p>
-      <p> Cafe Stefanshus byder både på billard, pool, sport på storskærm og har også et køkken, hvor de laver lækker mad. </p>
-    </div>
-
-    <div class="favoriteBarMap">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2044.2259466332416!2d12.543289343764833!3d55.69520341895135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253b2baefef6d%3A0xe6542a32d92f1795!2sCafe%20Stefanshus!5e0!3m2!1sda!2sdk!4v1669052330168!5m2!1sda!2sdk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </div>
 
 </main>
 
-<div class="allBarList">
-  <ul id="bars"> </ul>
-</div>
+
+    <div class="allBarList">
+        <ul id="bars"> </ul>
+    </div>
 
 
+    <div class="signInPopUp">
+        <div class="popUpHeader">
+            <div class="popUpTitle"> Log in </div>
+            <button class="closePopUpBtn"> &times; </button>
+        </div>
+        <div class="popUpText">
+            <form>
+                <label for="name">Navn:</label>
+                <input type="text" id="name" name="name"><br><br>
 
-<div class="signInPopUp">
-  <div class="popUpHeader">
-    <div class="popUpTitle"> Log in </div>
-    <button class="closePopUpBtn">  </button>
-  </div>
-  <div class="popUpText">
-    <form>
-      <label for="name">Navn:</label>
-      <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"><br><br>
 
-      <label for="email">Email:</label>
-      <input type="text" id="email" name="email"><br><br>
+                <input type="submit" id="signIn" value=" Log in ">
+            </form>
+        </div>
+    </div>
 
-      <input type="submit" id="signIn" value=" Log in ">
-    </form>
-  </div>
-</div>
 
-<div id="overlay"> </div>
+    <div class="aboutUs">
+        <h5> Om os </h5>
+        <p> Hans <span> "Hansi" </span> Nielsen </p>
+        <p> Gustav <span> "Lille trold" </span> Frederik Schondorff Strandberg </p>
+        <p> Frederik <span> "Frizzy" </span> Zanchetta Kløcker </p>
+    </div>
 
+
+    <div id="overlay"> </div>
 
 <script src="main.js"> </script>
-</body>
-</html>
 
-<div> </div>
+</body>
+
+</html>

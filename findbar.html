@@ -14,50 +14,63 @@
 </head>
 
 <body>
+
 <header>
-  <div class="headerTitleLogo">
-    <div class="titleText">
-      <a href="index.html" class="reloadPage" > <h1> Barmakker  </h1> </a>
-    </div>
-  </div>
 
-  <nav class="navBar">
-    <div class="navBarBtn1">
-      <button class="signIn"> Log in </button>
+    <div class="headerTitleLogo">
+        <div class="titleText">
+            <a href="index.html" class="reloadPage" > <h1> Barmakker  </h1> </a>
+        </div>
     </div>
 
+    <nav class="navBar">
+        <div class="navBarBtn1">
+            <button class="signIn"> Log in </button>
+        </div>
+    </nav>
 
-  </nav>
 </header>
 
+
 <main>
-  <div class="allBarList">
-    <ul id="bars"> </ul>
-  </div>
+    <div class="allBarList">
+        <ul id="bars"> </ul>
+    </div>
 </main>
 
-<div class="signInPopUp">
-  <div class="popUpHeader">
-    <div class="popUpTitle"> Log in </div>
-    <button class="closePopUpBtn"> &times; </button>
-  </div>
-  <div class="popUpText">
-    <form>
-      <label for="name">Navn:</label>
-      <input type="text" id="name" name="name"><br><br>
 
-      <label for="email">Email:</label>
-      <input type="text" id="email" name="email"><br><br>
+    <div class="signInPopUp">
+        <div class="popUpHeader">
+            <div class="popUpTitle"> Log in </div>
+            <button class="closePopUpBtn"> &times; </button>
+        </div>
 
-      <input type="submit" id="signIn" value=" Log in ">
-    </form>
-  </div>
-</div>
+        <div class="popUpText">
+            <form>
+                <label for="name">Navn:</label>
+                <input type="text" id="name" name="name"><br><br>
 
-<div id="overlay"> </div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"><br><br>
+
+                <input type="submit" id="signIn" value=" Log in ">
+            </form>
+        </div>
+    </div>
 
 
+    <div class="aboutUs">
+        <h5> Om os </h5>
+        <p> Hans <span> "Hansi" </span> Nielsen </p>
+        <p> Gustav <span> "Lille trold" </span> Frederik Schondorff Strandberg </p>
+        <p> Frederik <span> "Frizzy" </span> Zanchetta Kløcker </p>
+    </div>
+
+
+    <div id="overlay"> </div>
 
 <script src="findBarPage.js"></script>
+
 </body>
+
 </html>
