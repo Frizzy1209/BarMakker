@@ -326,7 +326,6 @@ h5 {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-
 }
 
 .allBarList {
@@ -369,11 +368,7 @@ h5 {
 }
 
 #bars {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
-    max-width: 80%;
 }
 
 li {
@@ -458,17 +453,25 @@ li {
         width: 90%;
     }
 
+    h5 {
+        font-size: 18px;
+    }
+
     .aboutUs {
         padding-top: 50px;
         font-size: 12px;
     }
 
-    h5 {
-        font-size: 18px;
-    }
-
     .signInPopUp {
         width: 300px;
+    }
+
+    .copyRight {
+        font-size: 9px;
+    }
+
+    #copyRight {
+        font-size: 13px;
     }
 
 
@@ -478,6 +481,7 @@ li {
     .dataFromApi {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .filterSearch {
@@ -485,29 +489,15 @@ li {
         width: 80%;
     }
 
-    #searchField {
-    }
-
-    #searchBtn {
-    }
-
     .checkBoxContainer {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
 
         font-size: 13px;
     }
 
-    .checkBox1 {
-    }
 
-    .checkBox2 {
-    }
-
-    .allBarList {
-        min-width: 80%;
-    }
 }
 
 
