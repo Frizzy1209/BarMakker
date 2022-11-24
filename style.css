@@ -5,6 +5,7 @@ body {
     padding: 10px;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -62,7 +63,7 @@ h1 {
 /* Navbar section & button */
 
 .navBar {
-    width: 135px;
+    width: 270px;
     height: 35px;
 
     background-color: rgba(114, 114, 114, 0.5);
@@ -70,7 +71,7 @@ h1 {
     padding: 5px;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .navBar button{
@@ -375,23 +376,28 @@ li {
 
 /* Responsive website for mobile device */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     body {
         background-image: url("bar2mobil.jpg");
     }
 
     .navBar {
-        height: 50px;
-        width: 45px;
+        display: flex;
+        flex-direction: column;
+
+        height: 95px;
+        width: 65px;
     }
 
     .navBar button {
-        height: 50px;
-        width: 45px;
+        height: 40px;
+        width: 65px;
+
+        font-size: 7px;
     }
 
     h1 {
-        font-size: 42px;
+        font-size: 40px;
     }
 
     .welcomeSectionHeadline {
