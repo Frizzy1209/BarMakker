@@ -6,15 +6,17 @@ body {
     padding: 10px;
 }
 
-#myVideo {
+#computerBackgroundVid {
     position: fixed;
     right: 0;
-    bottom: 0;
+    top: 0;
     min-width: 100%;
     min-height: 100%;
 
     z-index: -1;
 }
+
+
 
 header {
     display: flex;
@@ -392,13 +394,17 @@ li {
 /* Responsive website for mobile device */
 
 @media only screen and (max-width: 800px) {
-    #myVideo {
+    #computerBackgroundVid {
         display: none;
     }
 
-    body {
-        background-image: url("bar2mobil.jpg");
-        background-attachment: fixed;
+    #mobileBackgroundVid {
+        position: fixed;
+        bottom: 0;
+        left: -90%;
+        height: 1000px;
+
+        z-index: -1;
     }
 
     .navBar {
