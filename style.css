@@ -1,3 +1,4 @@
+
 body {
     background-image: url("bar2.jpg");
     background-size: cover;
@@ -37,6 +38,7 @@ span {
 
 
 
+
 /* Title & logo */
 
 .headerTitleLogo {
@@ -64,6 +66,7 @@ h1 {
 .reloadPage:hover {
     cursor: pointer;
 }
+
 
 
 
@@ -136,6 +139,7 @@ button:hover {
 
 
 
+
 /* Find bar  */
 
 .findBarBtn {
@@ -176,7 +180,6 @@ h4 {
     font-size: 25px;
 }
 
-
 .favoriteBarText {
     display: flex;
     justify-content: center;
@@ -191,7 +194,6 @@ h4 {
     justify-content: center;
     align-items: center;
 }
-
 
 
 
@@ -274,12 +276,14 @@ h4 {
 
 
 
+
 /* About us */
 
 h5 {
     font-size: x-large;
     color: #e63946;
 }
+
 
 
 
@@ -303,6 +307,8 @@ h5 {
 
 
 
+
+
 /* Find bar headline text */
 
 .findBarHeadlineContainer {
@@ -315,6 +321,7 @@ h5 {
     color: #e63946;
     font-size: 35px;
 }
+
 
 
 
@@ -348,7 +355,6 @@ h5 {
     padding: 7px;
     border-radius: 15px;
     margin: 15px;
-
 }
 
 .checkBoxContainer {
@@ -365,10 +371,6 @@ h5 {
 .checkBox2 {
     display: flex;
     flex-direction: column;
-}
-
-#bars {
-
 }
 
 li {
@@ -476,6 +478,9 @@ li {
 
 
 
+
+
+
     /* Find bar page */
 
     .dataFromApi {
@@ -497,8 +502,16 @@ li {
         font-size: 13px;
     }
 
+    .allBarList {
+        display: flex;
+    }
+
+    #bars {
+        padding-left: 0;
+    }
 
 }
+
 
 
 
