@@ -329,20 +329,18 @@ h5 {
 
 }
 
+.allBarList {
+    max-width: 80%;
+}
+
 .filterSearch {
     display: flex;
-
     flex-direction: column;
 
     margin: 25px;
 }
 
 #searchBtn {
-    padding: 7px;
-    margin: 15px;
-}
-
-.resetSearch {
     padding: 7px;
     margin: 15px;
 }
@@ -354,25 +352,37 @@ h5 {
 
 }
 
-.checkBox {
+.checkBoxContainer {
     display: flex;
     flex-direction: column;
     color: #e63946;
 }
 
-.allBarList {
-    width: 65%;
-    margin: 15px;
+.checkBox1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkBox2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#bars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    max-width: 80%;
 }
 
 li {
     list-style-type: none ;
-    margin: 35px;
     border-radius: 25px;
     border: #e63946 2px solid;
     background-color: rgba(70, 70, 70, 0.75);
     padding: 15px;
-    width: 90%;
+    margin: 20px;
 
     text-decoration-style: solid;
 }
@@ -384,7 +394,11 @@ li {
 
 /* Responsive website for mobile device */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+    #myVideo {
+        display: none;
+    }
+
     body {
         background-image: url("bar2mobil.jpg");
     }
@@ -457,16 +471,43 @@ li {
         width: 300px;
     }
 
+
+
+    /* Find bar page */
+
     .dataFromApi {
         display: flex;
         flex-direction: column;
     }
 
-    ul {
-        margin: 0;
-        padding: 0;
+    .filterSearch {
+        display: flex;
+        width: 80%;
     }
 
+    #searchField {
+    }
+
+    #searchBtn {
+    }
+
+    .checkBoxContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        font-size: 13px;
+    }
+
+    .checkBox1 {
+    }
+
+    .checkBox2 {
+    }
+
+    .allBarList {
+        min-width: 80%;
+    }
 }
 
 
