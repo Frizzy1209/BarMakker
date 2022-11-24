@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link rel="icon" type="image/x-con" href="favicon.ico">
-  <link rel="stylesheet" href="style.css">
-  <title> BARMAKKER </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-con" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title> BARMAKKER </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
 
 </head>
 
@@ -31,52 +31,50 @@
 
 </header>
 
-    <div class="findBarHeadlineContainer">
-        <div class="findBarHeadline">
-            <h2> Find din bar her! </h2>
-        </div>
+<div class="findBarHeadlineContainer">
+    <div class="findBarHeadline">
+        <h2> Find din bar her! </h2>
     </div>
+</div>
 
 <main class="dataFromApi">
 
     <div class="filterSearch">
-        <input class="searchField" placeholder=" Søg efter din bar her! ">
+        <input id="searchField" placeholder=" Bar navn... ">
+
+        <button id="searchBtn"> Søg </button>
 
         <form class="checkBox">
 
             <p> By </p>
-            <label for="test 1"> Vesterbro </label><br>
-            <input type="checkbox" id="test 1" name="test 1" value="">
+            <label for="test1"> Vesterbro </label>
+            <input type="checkbox" id="test1" name="test1" value="yes">
 
-            <label for="test 2"> Nørrebro </label><br>
-            <input type="checkbox" id="test 2" name="test 2" value=" ">
+            <label for="test 2"> Nørrebro </label>
+            <input type="checkbox" id="test 2" name="test 2" value="yes">
 
-            <label for="test 3"> Østerbro </label><br>
-            <input type="checkbox" id="test 3" name="test 3" value=" ">
+            <label for="test 3"> Østerbro </label>
+            <input type="checkbox" id="test 3" name="test 3" value="yes">
 
-            <p> Spil & Billard </p>
-            <label for="test 4"> Spil </label><br>
-            <input type="checkbox" id="test 4" name="test 4" value=" ">
+            <label for="test 4"> København K </label>
+            <input type="checkbox" id="test 4" name="test 4" value="yes">
 
-            <label for="test 5"> Billard </label><br>
-            <input type="checkbox" id="test 5" name="test 5" value=" ">
+            <p> Krav </p>
+            <label for="test 5"> Spil </label>
+            <input type="checkbox" id="test 5" name="test 5" value="yes">
 
-            <p> Viser sport </p>
-            <label for="test 6"> Viser Sport </label><br>
-            <input type="checkbox" id="test 6" name="test 6" value=" ">
+            <label for="test 6"> Billard </label>
+            <input type="checkbox" id="test 6" name="test 6" value="yes">
 
-            <p> Rygning tilladt </p>
-            <label for="test 7"> Rygning tilladt </label><br>
-            <input type="checkbox" id="test 7" name="test 7" value=" ">
+            <label for="test 7"> Viser sport </label>
+            <input type="checkbox" id="test 7" name="test 7" value="yes">
 
-            <p> Happy Hour </p>
-            <label for="test 8"> Happy hour </label><br>
-            <input type="checkbox" id="test 8" name="test 8" value=" ">
+            <label for="test 8"> Rygning tilladt </label>
+            <input type="checkbox" id="test 8" name="test 8" value="yes">
+
+            <label for="test 9"> Happy hour </label>
+            <input type="checkbox" id="test 9" name="test 9" value="yes">
         </form>
-
-        <button class="searchBtn"> Søg </button>
-
-        <button class="resetSearch"> Ryd søgning </button>
     </div>
 
     <div class="allBarList">
@@ -86,35 +84,35 @@
 </main>
 
 
-    <div class="signInPopUp">
-        <div class="popUpHeader">
-            <div class="popUpTitle"> Log in </div>
-            <button class="closePopUpBtn"> &times; </button>
-        </div>
-
-        <div class="popUpText">
-            <form>
-                <label for="name">Navn:</label>
-                <input type="text" id="name" name="name"><br><br>
-
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email"><br><br>
-
-                <input type="submit" id="signIn" value=" Log in ">
-            </form>
-        </div>
+<div class="signInPopUp">
+    <div class="popUpHeader">
+        <div class="popUpTitle"> Log in </div>
+        <button class="closePopUpBtn"> &times </button>
     </div>
 
+    <div class="popUpText">
+        <form>
+            <label for="name">Navn:</label>
+            <input type="text" id="name" name="name"><br><br>
 
-    <div class="aboutUs">
-        <h5> Om os </h5>
-        <p> Hans <span> "Hansi" </span> Nielsen </p>
-        <p> Gustav <span> "Lille trold" </span> Frederik Schondorff Strandberg </p>
-        <p> Frederik <span> "Frizzy" </span> Zanchetta Kløcker </p>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br><br>
+
+            <button id="signIn" value=" Log in " ></button>
+        </form>
     </div>
+</div>
 
 
-    <div id="overlay"> </div>
+<div class="aboutUs">
+    <h5> Om os </h5>
+    <p> Hans <span> "Ante" </span> Nielsen </p>
+    <p> Gustav <span> "Lille trold" </span> Frederik Schandorff Strandberg </p>
+    <p> Frederik <span> "Frizzy" </span> Zanchetta Kløcker </p>
+</div>
+
+
+<div id="overlay"> </div>
 
 <script src="findBarPage.js"></script>
 
