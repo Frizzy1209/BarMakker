@@ -98,7 +98,7 @@ function searchBars (bars) {
 }
 
 const filterBtn = document.querySelector('#searchBtn')
-let inputSearch = document.querySelector('#searchField')
+let inputSearch = document.querySelector('#searchField').value
 inputSearch.addEventListener("keypress", function (event) {
     if(event.key === "Enter"){
         event.preventDefault();
