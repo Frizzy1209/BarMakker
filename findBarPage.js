@@ -54,7 +54,7 @@ function checkboxBars (bars) {
         for (let i = 0; i < bars.length; i++) {
             const bar = bars[i];
             debugger;
-            if((vesterbro.checked) === (true) && (bar.bar_city === 'Vesterbro')) {
+            if((billard.checked) == (true) && (bar.billard == 1)) {
                 checkBoxedBars.push(bar);
             }
         }
