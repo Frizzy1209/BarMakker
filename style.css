@@ -407,6 +407,12 @@ li {
         z-index: -1;
     }
 
+    body {
+        background-image: url("bar2mobil.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
     .navBar {
         display: flex;
         flex-direction: column;
