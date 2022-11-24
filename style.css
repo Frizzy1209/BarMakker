@@ -432,6 +432,11 @@ li {
 
     .aboutUs {
         padding-top: 20px;
+        font-size: 12px;
+    }
+
+    h5 {
+        font-size: 18px;
     }
 
     .signInPopUp {
