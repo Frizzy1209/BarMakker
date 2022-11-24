@@ -20,11 +20,11 @@ function renderBars(bars) {
             <p class="bar_description"><span> Beskrivelse: </span>${bar.bar_description}</p>
             <p class="opening_hours"><span> Åbningstider: </span>${bar.opening_hours}</p>
             <p class="prices"><span> Priser: </span>${bar.prices}</p>
-            <p class="games"><span> Spil: </span>${bar.games}</p>
-            <p class="billiard"><span> Billard: </span>${bar.billiard}</p>
-            <p class="smoking_allowed"><span> Rygning indenfor: </span>${bar.smoking_allowed}</p>
-            <p class="happy_hour"><span> Happy Hour: </span>${bar.happy_hour}</p>
-            <p class="viser_sport"><span> Viser sport: </span>${bar.viser_sport}</p>
+            <p class="games"><span> Spil: </span>${bar.games === 1? ' ✅': ' ❌'}</p>
+            <p class="billiard"><span> Billard: </span>${bar.billiard === 1? ' ✅': '❌'}</p>
+            <p class="smoking_allowed"><span> Rygning indenfor: </span>${bar.smoking_allowed === 1? ' ✅': '❌'}</p>
+            <p class="happy_hour"><span> Happy Hour: </span>${bar.happy_hour === 1? ' ✅': '❌'}</p>
+            <p class="viser_sport"><span> Viser sport: </span>${bar.viser_sport === 1? ' ✅': '❌'}</p>
         `;
         ul.appendChild(li);
     }
@@ -36,12 +36,7 @@ function renderBars(bars) {
 
 
 
-
-
-
-
-
-
+/*
 
 //brugeren skal kunne tilføje en bar til databasen
 
@@ -108,6 +103,8 @@ fetch('http://localhost:3000/user/create', {
 
 
 
+ */
+
 
 
 
@@ -136,6 +133,8 @@ closeSignInBtn.addEventListener(`click`, function (){
     showSignInPopUp.classList.remove(`active`)
     overlay.classList.remove(`active`)
 })
+
+
 
 
 
