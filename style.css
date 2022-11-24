@@ -39,7 +39,7 @@ span {
 
 
 
-/* Title & logo */
+/* Title - logo */
 
 .headerTitleLogo {
     width: 50%;
@@ -398,6 +398,7 @@ li {
 
     body {
         background-image: url("bar2mobil.jpg");
+        background-attachment: fixed;
     }
 
     .navBar {
@@ -416,24 +417,24 @@ li {
     }
 
     h1 {
-        font-size: 40px;
+        font-size: 45px;
     }
 
     .welcomeSectionHeadline {
-        font-size: 15px;
+        font-size: 25px;
     }
 
     .welcomeSectionText {
-        font-size: 12px;
+        font-size: 16px;
 
         padding-bottom: 80px;
     }
 
     .findBarBtn {
-        height: 48px;
-        width: 210px;
+        height: 58px;
+        width: 240px;
 
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .findBarHeadline {
