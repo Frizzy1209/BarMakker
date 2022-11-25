@@ -129,6 +129,7 @@ const emailInput = document.querySelector('#email')
 const createNewUser = document.querySelector('#signIn')
 
 createNewUser.addEventListener('click', function () {
+alert('Tester tester')
 
     const name = nameInput.value
     const email = emailInput.value
