@@ -159,7 +159,7 @@ alert('Tester tester')
 
 // sign in pop up
 
-const openSignInBtn = document.querySelector(`.signIn`)
+const openSignInBtn = document.querySelector(`.OpenSignIn`)
 const closeSignInBtn = document.querySelector(`.closePopUpBtn`)
 const showSignInPopUp = document.querySelector(`.signInPopUp`)
 const overlay = document.querySelector(`#overlay`)
