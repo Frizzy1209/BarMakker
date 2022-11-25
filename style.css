@@ -254,8 +254,23 @@ h4 {
     font-size: 1.25rem;
 }
 
-#signIn {
-    width: 25%;
+.popUpButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#signInBtn {
+    width: 120px;
+    font-size: 11px;
+}
+#createUserBtn {
+    width: 120px;
+    font-size: 11px;
+}
+
+.popUpText input {
+    border-radius: 12px;
+    padding: 5px;
 }
 
 #overlay {
@@ -482,6 +497,17 @@ li {
 
     .signInPopUp {
         width: 300px;
+    }
+
+    #signInBtn {
+        width: 80px;
+        height: 60px;
+        font-size: 11px;
+    }
+    #createUserBtn {
+        width: 80px;
+        height: 60px;
+        font-size: 11px;
     }
 
     .copyRight {

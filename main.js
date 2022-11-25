@@ -10,9 +10,11 @@ findBar.addEventListener('click', function () {
 
 
 
+
+
 // Sign in pop-up
 
-const openSignInBtn = document.querySelector(`.openSignIn`)
+const openSignInBtn = document.querySelector(`.openPopUpBtn`)
 const closeSignInBtn = document.querySelector(`.closePopUpBtn`)
 const showSignInPopUp = document.querySelector(`.signInPopUp`)
 const overlay = document.querySelector(`#overlay`)
@@ -34,13 +36,16 @@ closeSignInBtn.addEventListener(`click`, function ()
     }
 )
 
-//
+
+
+
+
 
 // Brugeren skal kunne log-in
 
 const nameInput = document.querySelector('#name')
 const emailInput = document.querySelector('#email')
-const createNewUser = document.querySelector('#signIn')
+const createNewUser = document.querySelector('#signInBtn')
 
 createNewUser.addEventListener('click', function () {
 
