@@ -72,10 +72,10 @@ function searchBars (bars) {
 
 function checkboxBars (bars) {
 
-    const vesterbro = document.querySelector('#test1')
-    const noerrebro = document.querySelector('#test2')
-    const oesterbro = document.querySelector('#test3')
-    const koebenhavnK = document.querySelector('#test4')
+    const vesterbro = document.querySelector('#city1')
+    const noerrebro = document.querySelector('#city2')
+    const oesterbro = document.querySelector('#city3')
+    const koebenhavnK = document.querySelector('#city4')
 
 
     const games = document.querySelector('#test5')
@@ -104,20 +104,20 @@ function checkboxBars (bars) {
         }
 
 
-        kravList = [];
+        featureList = [];
         for (let i = 0; i < bars.length; i++) {
             const bar = bars[i];
 
             if ((games.checked) === (true) && (bar.games === 1)) {
-                kravList.push(bar);
+                featureList.push(bar);
             } if((billard.checked) === (true) && (bar.billiard === 1)) {
-                kravList.push(bar);
+                featureList.push(bar);
             } if((sport.checked) === (true) && (bar.viser_sport === 1)) {
-                kravList.push(bar);
+                featureList.push(bar);
             } if((smokingAllowed.checked) === (true) && (bar.smoking_allowed === 1)) {
-                kravList.push(bar);
+                featureList.push(bar);
             } if((happyHour.checked) === (true) && (bar.happy_hour === 1)) {
-                kravList.push(bar);
+                featureList.push(bar);
             }
         }
 
@@ -131,7 +131,7 @@ function checkboxBars (bars) {
             inFirstOnly = operation,
             inSecondOnly = (list1, list2) => inFirstOnly(list2, list1);
 
-        const filteredRealList =  inBoth(kravList, searchFilterArray);
+        const filteredRealList =  inBoth(featureList, searchFilterArray);
 
         renderBars(filteredRealList);
     })
