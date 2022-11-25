@@ -144,9 +144,9 @@ function checkboxBars (bars) {
 
 // Brugeren skal kunne log-in
 
-const nameInput = document.querySelector('#name')
-const emailInput = document.querySelector('#email')
-const createNewUser = document.querySelector('#signInBtn')
+const nameInput = document.querySelector('#fName')
+const emailInput = document.querySelector('#newUserEmail')
+const createNewUser = document.querySelector('#submitNewUser')
 
 createNewUser.addEventListener('click', function () {
 alert('Tester tester')
@@ -177,7 +177,8 @@ alert('Tester tester')
 
 
 
-// sign in pop up
+
+// Sign in pop-up
 
 const openSignInBtn = document.querySelector(`.openPopUpBtn`)
 const closeSignInBtn = document.querySelector(`.closePopUpBtn`)
@@ -193,13 +194,39 @@ openSignInBtn.addEventListener
     }
 )
 
-closeSignInBtn.addEventListener(`click`, function (){
-    if (showSignInPopUp == null) return
-    showSignInPopUp.classList.remove(`active`)
-    overlay.classList.remove(`active`)
-})
+closeSignInBtn.addEventListener(`click`, function ()
+    {
+        if (showSignInPopUp == null) return
+        showSignInPopUp.classList.remove(`active`)
+        overlay.classList.remove(`active`)
+    }
+)
 
 
+
+
+
+// Create new user pop-up
+
+const createNewUserBtn = document.querySelector(`#createUserBtn`)
+const closeNewUserBtn = document.querySelector(`.closeNewUserBtn`)
+const showNewUserPopUp = document.querySelector(`.createUserPopUp`)
+
+
+createNewUserBtn.addEventListener
+(`click`, function()
+    {
+        if (showNewUserPopUp == null) return
+        showNewUserPopUp.classList.add(`active`)
+    }
+)
+
+closeNewUserBtn.addEventListener(`click`, function ()
+    {
+        if (showNewUserPopUp == null) return
+        showNewUserPopUp.classList.remove(`active`)
+    }
+)
 
 
 

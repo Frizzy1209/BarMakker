@@ -40,12 +40,39 @@ closeSignInBtn.addEventListener(`click`, function ()
 
 
 
+// Create new user pop-up
+
+const createNewUserBtn = document.querySelector(`#createUserBtn`)
+const closeNewUserBtn = document.querySelector(`.closeNewUserBtn`)
+const showNewUserPopUp = document.querySelector(`.createUserPopUp`)
+
+
+createNewUserBtn.addEventListener
+(`click`, function()
+    {
+        if (showNewUserPopUp == null) return
+        showNewUserPopUp.classList.add(`active`)
+    }
+)
+
+closeNewUserBtn.addEventListener(`click`, function ()
+    {
+        if (showNewUserPopUp == null) return
+        showNewUserPopUp.classList.remove(`active`)
+    }
+)
+
+
+
+
+
+
 
 // Brugeren skal kunne log-in
 
-const nameInput = document.querySelector('#name')
-const emailInput = document.querySelector('#email')
-const createNewUser = document.querySelector('#signInBtn')
+const nameInput = document.querySelector('#fName')
+const emailInput = document.querySelector('#newUserEmail')
+const createNewUser = document.querySelector('#submitNewUser')
 
 createNewUser.addEventListener('click', function () {
 
@@ -69,3 +96,4 @@ createNewUser.addEventListener('click', function () {
             console.log(isSuccessfulString);
         });
 })
+

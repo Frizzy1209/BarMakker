@@ -234,7 +234,7 @@ h4 {
 }
 
 .popUpTitle {
-    font-size: 1.50rem;
+    font-size: 25px;
     font-weight: bold;
 
     color: #e63946;
@@ -245,32 +245,34 @@ h4 {
     border: none;
     outline: none;
     background: none;
-    font-size: 1.25rem;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .popUpText {
     padding: 10px 15px;
-    font-size: 1.25rem;
-}
-
-.popUpButtons {
-    display: flex;
-    justify-content: space-between;
+    font-size: 20px;
 }
 
 #signInBtn {
     width: 120px;
     font-size: 11px;
 }
+
+#createUserBtnText {
+    font-size: 15px;
+}
+
 #createUserBtn {
-    width: 120px;
+    width: 180px;
     font-size: 11px;
 }
 
 .popUpText input {
     border-radius: 12px;
     padding: 5px;
+
+    width: 300px;
 }
 
 #overlay {
@@ -289,6 +291,71 @@ h4 {
 #overlay.active {
     opacity: 1;
     pointer-events: all;
+}
+
+
+
+
+
+
+/* Create new user pop-up */
+
+.createUserPopUp {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+
+    z-index: 15;
+
+    border-radius: 15px;
+    width: 400px;
+    background-color: #3a768f;
+
+    font-family: michromaregular;
+}
+
+.createUserPopUp.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.newUserHeader {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newUserTitle {
+    font-size: 20px;
+    font-weight: bold;
+
+    color: #e63946;
+}
+
+.closeNewUserBtn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.newUserText {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+.newUserText input {
+    border-radius: 12px;
+    padding: 5px;
+
+    width: 350px;
 }
 
 
@@ -431,6 +498,8 @@ li {
         background-size: cover;
     }
 
+
+
     .navBar {
         display: flex;
         flex-direction: column;
@@ -446,9 +515,15 @@ li {
         font-size: 9px;
     }
 
+
+
+
     h1 {
         font-size: 45px;
     }
+
+
+
 
     .welcomeSectionHeadline {
         font-size: 25px;
@@ -460,12 +535,18 @@ li {
         padding-bottom: 80px;
     }
 
+
+
+
     .findBarBtn {
         height: 58px;
         width: 240px;
 
         font-size: 14px;
     }
+
+
+
 
     .findBarHeadline {
         font-size: 20px;
@@ -486,29 +567,42 @@ li {
         width: 90%;
     }
 
+
+
+
     h5 {
         font-size: 18px;
     }
+
+
+
 
     .aboutUs {
         padding-top: 50px;
         font-size: 12px;
     }
 
+
+
+
     .signInPopUp {
         width: 300px;
     }
 
-    #signInBtn {
-        width: 80px;
-        height: 60px;
-        font-size: 11px;
+    .popUpText input {
+        width: 250px;
     }
-    #createUserBtn {
-        width: 80px;
-        height: 60px;
-        font-size: 11px;
+
+    .createUserPopUp {
+        width: 300px;
     }
+
+    .newUserText input {
+        width: 250px;
+    }
+
+
+
 
     .copyRight {
         font-size: 9px;

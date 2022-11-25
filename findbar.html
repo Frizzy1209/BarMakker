@@ -101,25 +101,63 @@
 <div class="signInPopUp">
 
     <div class="popUpHeader">
-        <div class="popUpTitle"> Log in </div>
+        <div class="popUpTitle"> Log ind </div>
         <button class="closePopUpBtn"> &times </button>
     </div>
 
     <div class="popUpText">
-        <form>
-            <label for="name">Navn:</label>
-            <input type="text" id="name" name="name"><br><br>
 
-            <label for="email">Email:</label>
+        <form>
+            <label for="email">Email </label>
             <input type="text" id="email" name="email"><br><br>
 
-            <div class="popUpButtons" >
-                <button id="signInBtn" value="LogIn" > Log ind </button>
-                <button id="createUserBtn" value="createUser"> Opret bruger </button>
-            </div>
+            <label for="userPassword-afterUserCreation">Adgangskode </label>
+            <input type="text" id="userPassword-afterUserCreation" name="password"><br><br>
+
+            <button id="signInBtn" value="LogIn" > Log ind </button>
         </form>
+
+        <br>
+        <p id="createUserBtnText" > Bliv en Barmakker her </p>
+        <button id="createUserBtn" value="createUser"> Opret bruger </button>
     </div>
 
+</div>
+
+
+
+
+<div class="createUserPopUp">
+
+    <div class="newUserHeader">
+        <div class="newUserTitle"> Bliv Barmakker </div>
+        <button class="closeNewUserBtn"> &times </button>
+    </div>
+
+    <div class="newUserText">
+
+        <form>
+
+            <label for="fName"> Fornavn: </label>
+            <input type="text" id="fName" name="name"><br><br>
+
+            <label for="lName">Efternavn:</label>
+            <input type="text" id="lName" name="name"><br><br>
+
+            <label for="newUserEmail">Email:</label>
+            <input type="text" id="newUserEmail" name="newUserEmail"><br><br>
+
+            <label for="userPassword">Adgangskode:</label>
+            <input type="text" id="userPassword" name="userPassword"><br><br>
+
+            <label for="userPassword">Gentag sdgangskode:</label>
+            <input type="text" id="repeatUserPassword" name="userPassword"><br><br>
+
+            <button id="submitNewUser" value="submit" > Opret bruger </button>
+
+        </form>
+
+    </div>
 </div>
 
 
