@@ -79,7 +79,7 @@ h1 {
 /* Navbar section & button */
 
 .navBar {
-    width: 270px;
+    width: 135px;
     height: 35px;
 
     background-color: rgba(114, 114, 114, 0.5);
@@ -420,15 +420,15 @@ li {
         display: flex;
         flex-direction: column;
 
-        height: 95px;
-        width: 65px;
+        height: 45px;
+        width: 55px;
     }
 
     .navBar button {
-        height: 40px;
-        width: 65px;
+        height: 45px;
+        width: 55px;
 
-        font-size: 7px;
+        font-size: 9px;
     }
 
     h1 {

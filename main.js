@@ -12,7 +12,7 @@ findBar.addEventListener('click', function () {
 
 // Sign in pop-up
 
-const openSignInBtn = document.querySelector(`.OpenSignIn`)
+const openSignInBtn = document.querySelector(`.openSignIn`)
 const closeSignInBtn = document.querySelector(`.closePopUpBtn`)
 const showSignInPopUp = document.querySelector(`.signInPopUp`)
 const overlay = document.querySelector(`#overlay`)
