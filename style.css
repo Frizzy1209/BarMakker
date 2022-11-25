@@ -8,12 +8,16 @@ body {
 
 #computerBackgroundVid {
     position: fixed;
-    right: 0;
     top: 0;
+    right: 0;
     min-width: 100%;
     min-height: 100%;
 
     z-index: -1;
+}
+
+#mobileBackgroundVid {
+    display: none;
 }
 
 
@@ -399,6 +403,7 @@ li {
     }
 
     #mobileBackgroundVid {
+        display: block;
         position: fixed;
         bottom: 0;
         left: -90%;
