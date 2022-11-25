@@ -4,13 +4,18 @@ fetch('https://barmakker-api.onrender.com/johnny')
     .then(function (bars) {
         renderBars(bars);
         searchBars (bars)
-        checkboxBars(bars)
+        //checkboxBars(bars)
+        checkboxBarsCity(bars)
+        // checkboxBarsFeatures(bars)
     });
 
 
+/*
 let searchFilterArray = [];
+let kravList =[];
 
 
+ */
 
 
 
@@ -44,6 +49,9 @@ function renderBars(bars) {
 
 
 
+
+
+
 // Search bar function on name
 
 function searchBars (bars) {
@@ -68,14 +76,15 @@ function searchBars (bars) {
 
 
 
-// Checkbox function
+// Checkbox function city
 
-function checkboxBars (bars) {
+function checkboxBarsCity (bars) {
 
     const vesterbro = document.querySelector('#test1')
     const noerrebro = document.querySelector('#test2')
     const oesterbro = document.querySelector('#test3')
     const koebenhavnK = document.querySelector('#test4')
+
 
     const games = document.querySelector('#test5')
     const billard = document.querySelector('#test6')
@@ -91,7 +100,7 @@ function checkboxBars (bars) {
         for (let i = 0; i < bars.length; i++) {
             const bar = bars[i];
 
-            if((vesterbro.checked) === (true) && (bar.bar_city === 'Vesterbro')) {
+            if ((vesterbro.checked) === (true) && (bar.bar_city === 'Vesterbro')) {
                 searchFilterArray.push(bar);
             } if((noerrebro.checked) === (true) && (bar.bar_city === 'Nørrebro')) {
                 searchFilterArray.push(bar);
@@ -100,8 +109,72 @@ function checkboxBars (bars) {
             } if((koebenhavnK.checked) === (true) && (bar.bar_city === 'København K')) {
                 searchFilterArray.push(bar);
             }
+        }
 
-              if ((games.checked) === (true) && (bar.games === 1)) {
+
+        kravList = [];
+        for (let i = 0; i < bars.length; i++) {
+            const bar = bars[i];
+
+            if ((games.checked) === (true) && (bar.games === 1)) {
+                kravList.push(bar);
+            } if((billard.checked) === (true) && (bar.billiard === 1)) {
+                kravList.push(bar);
+            } if((sport.checked) === (true) && (bar.viser_sport === 1)) {
+                kravList.push(bar);
+            } if((smokingAllowed.checked) === (true) && (bar.smoking_allowed === 1)) {
+                kravList.push(bar);
+            } if((happyHour.checked) === (true) && (bar.happy_hour === 1)) {
+                kravList.push(bar);
+            }
+        }
+
+
+
+        const operation = (list1, list2, isUnion = false) =>
+            list1.filter(
+                (set => a => isUnion === set.has(a.bar_id))(new Set(list2.map(b => b.bar_id)))
+            );
+
+        const inBoth = (list1, list2) => operation(list1, list2, true),
+            inFirstOnly = operation,
+            inSecondOnly = (list1, list2) => inFirstOnly(list2, list1);
+
+        const filteredRealList =  inBoth(kravList, searchFilterArray);
+
+        renderBars(filteredRealList);
+    })
+}
+
+
+
+
+
+
+
+
+
+
+/*
+
+function checkboxBarsFeatures (bars) {
+
+    const games = document.querySelector('#test5')
+    const billard = document.querySelector('#test6')
+    const sport = document.querySelector('#test7')
+    const smokingAllowed = document.querySelector('#test8')
+    const happyHour = document.querySelector('#test9')
+
+    const searchBtn = document.querySelector('#searchBtn')
+
+    searchBtn.addEventListener('click', function () {
+
+        searchFilterArray = [];
+        for (let i = 0; i < bars.length; i++) {
+            const bar = bars[i];
+
+
+            if ((games.checked) === (true) && (bar.games === 1)) {
                 searchFilterArray.push(bar);
             } if((billard.checked) === (true) && (bar.billiard === 1)) {
                 searchFilterArray.push(bar);
@@ -116,6 +189,10 @@ function checkboxBars (bars) {
         renderBars(searchFilterArray);
     })
 }
+
+
+ */
+
 
 
 
