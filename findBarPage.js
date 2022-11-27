@@ -78,11 +78,11 @@ function checkboxBars (bars) {
     const koebenhavnK = document.querySelector('#city4')
 
 
-    const games = document.querySelector('#test5')
-    const billard = document.querySelector('#test6')
-    const sport = document.querySelector('#test7')
-    const smokingAllowed = document.querySelector('#test8')
-    const happyHour = document.querySelector('#test9')
+    const games = document.querySelector('#feature5')
+    const billard = document.querySelector('#feature6')
+    const sport = document.querySelector('#feature7')
+    const smokingAllowed = document.querySelector('#feature8')
+    const happyHour = document.querySelector('#feature9')
 
     const searchBtn = document.querySelector('#searchBtn')
 
